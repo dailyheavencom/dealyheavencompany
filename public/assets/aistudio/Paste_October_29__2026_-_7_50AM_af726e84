@@ -1,0 +1,1110 @@
+# DH&Co — ULTIMATE MASTER PROMPT
+## Global E-Commerce Marketplace, Multi-Vendor Platform & Dropshipping System
+
+Act as a senior full-stack software architect, expert React + TypeScript developer, UI/UX designer, e-commerce marketplace engineer, payment integration specialist, cybersecurity engineer, and dropshipping automation architect.
+
+Your task is to DESIGN AND BUILD a complete, modern, responsive, professional, feature-rich global e-commerce marketplace called **DH&Co — Daily Heaven & Company**.
+
+Do not build only a landing page, static mockup, dashboard screenshot, or simple demo shop. Build a cohesive application with connected navigation, functional interactions, realistic sample data, working state management, complete buyer and seller workflows, an owner-controlled admin panel, and a clear architecture for real backend and third-party integrations.
+
+When a production integration requires credentials, an external account, or backend infrastructure, implement the configuration UI, typed integration interface, validation, status display, and safe demo mode. Never pretend that a payment, bank connection, supplier import, or shipment has succeeded when it has not.
+
+# 1. OFFICIAL WEBSITE INFORMATION
+
+Brand name: DH&Co
+
+Full company name: Daily Heaven & Company
+
+Official tagline: THE WORLD BRINGING TO YOUR PHONE
+
+Website domain: dailyheaven.com
+
+Official contact email: dailyheavenco@gmail.com
+
+Contact phone: +60196006241
+
+WhatsApp contact: +60196006241
+
+Primary brand colors:
+- Black
+- Dark Red
+- Grey
+- Golden
+
+Brand positioning: A premium, trustworthy, international online marketplace where customers can shop, sellers can sell, suppliers can provide products, and the owner can control the business from a centralized admin panel.
+
+Design a memorable DH&Co logo and brand identity. Use the exact brand spelling and tagline supplied above.
+
+Keep owner contact details in a configurable company information section and footer. Allow the owner to choose which contact details and social media links are visible to public visitors and buyers. Do not expose private admin information, credentials, or internal business records.
+
+# 2. TECHNOLOGY STACK AND CODING RULES
+
+Frontend:
+- React
+- TypeScript
+- Modern component-based architecture
+- Responsive CSS or an appropriate styling framework supported by the environment
+- Reusable UI components
+- Strong typing and maintainable code
+- Accessible forms, navigation, buttons, tables, dialogs and menus
+
+Development environment:
+- Google AI Studio
+- Use the Gemini model and tools available in the current environment.
+- Follow the environment's actual project structure and supported dependencies.
+- Do not assume a particular model version or unavailable package is installed.
+
+Storage:
+- Use LocalStorage for the initial frontend prototype, demo preferences, demo cart, wishlist, UI settings and explicitly non-sensitive sample data.
+- Create a typed storage service and versioned data schema.
+- Handle corrupted data, missing keys, storage failures and schema migrations.
+- Include sample data and a reset-demo-data function.
+- Do not store passwords, secret API keys, raw card details, authentication secrets or sensitive payment information in LocalStorage.
+
+Production architecture:
+- Separate the frontend from backend services through typed service interfaces.
+- Prepare a backend API layer and a production database integration strategy.
+- Use a secure authentication provider or server-side authentication implementation.
+- Enforce permissions and financial calculations on the server.
+- Keep provider credentials in server-side environment variables or a secure secrets manager.
+- Verify payment webhooks and supplier events on the backend.
+- Never place privileged secret keys in frontend code.
+
+If only a frontend execution environment is available, build the complete working frontend prototype first. Clearly label simulated operations and create integration-ready interfaces for production services.
+
+# 3. BRAND DESIGN SYSTEM
+
+Create a premium, luxurious, modern and internationally appealing visual identity.
+
+Color palette:
+- Primary black: #0B0B0D
+- Dark red: #690D18
+- Deep red hover: #8C1422
+- Golden accent: #C9A646
+- Light gold: #E1C574
+- Grey: #77777F
+- Light grey: #F1F1F3
+- White: #FFFFFF
+
+Use black and dark red as major brand colors, gold for premium highlights, and grey for secondary text, borders and supporting backgrounds.
+
+Design requirements:
+- Elegant DH&Co wordmark and logo.
+- Premium header and footer.
+- Clear visual hierarchy and professional typography.
+- Attractive product cards with images, prices, ratings and sale badges.
+- Subtle transitions and polished hover states.
+- Modern dashboard navigation and data tables.
+- Responsive mobile navigation.
+- Skeleton loaders, empty states, success states and error states.
+- Accessible color contrast and keyboard navigation.
+- Light/dark appearance support where practical, while retaining the brand identity.
+
+Avoid clutter, excessive animation, generic template styling and nonfunctional decorative buttons.
+
+# 4. USER ROLES AND ACCESS CONTROL
+
+Create four principal roles.
+
+A. Super Admin / Owner
+- Full authorized platform configuration.
+- Manage all buyers, sellers, suppliers, products, orders and settings.
+- Configure commissions, supported currencies and integrations.
+- Approve or suspend sellers and suppliers.
+- Review financial reports and audit logs.
+- Manage staff permissions.
+- Configure public company details and social media links.
+
+B. Buyer / Customer
+- Browse products and categories.
+- Search, compare, purchase and review products.
+- Manage account, addresses, wishlist and orders.
+- Track deliveries, request returns and communicate with support.
+
+C. Seller / Vendor
+- Apply to become a seller.
+- Create and manage a storefront.
+- Add and edit products.
+- Manage inventory, prices and orders.
+- View commissions, statements and eligible payouts.
+- Access sales analytics and customer support tools.
+
+D. Supplier / Dropshipping Partner
+- Maintain supplier profile and catalog.
+- Connect through supported integration methods.
+- Synchronize inventory and prices.
+- Receive eligible fulfillment requests.
+- Update shipment and tracking information.
+- Review fulfillment performance and disputes.
+
+Provide a role selector in DEMO MODE ONLY for testing all portals. In production, determine the user's role through trusted server-side authorization. Never allow a public role selector to grant administrator privileges.
+
+# 5. PUBLIC HOMEPAGE AND STOREFRONT
+
+Build a complete homepage with:
+
+- Announcement bar.
+- DH&Co logo.
+- Search bar with suggestions.
+- Product category navigation.
+- Account, wishlist and cart controls.
+- Hero banner with brand tagline.
+- Featured categories.
+- Trending and best-selling products.
+- New arrivals.
+- Flash sales and promotional campaigns.
+- Recommended products.
+- Special offers and bundles.
+- Featured sellers and brands.
+- Seasonal collections.
+- Recently viewed products.
+- Newsletter signup.
+- Trust and service information.
+- Social media links controlled by the owner.
+- Comprehensive footer with customer service, policies, contact information and company details.
+
+Include product pages, category pages, brand pages, seller storefronts, search results, promotional landing pages, help pages and policy pages.
+
+All navigation elements must lead to meaningful pages or functional actions.
+
+# 6. PRODUCT CATALOG AND PRODUCT MANAGEMENT
+
+Support configurable product categories for a broad range of lawful products, including:
+
+- Electronics and accessories.
+- Fashion, footwear and bags.
+- Beauty and personal care.
+- Home, furniture and kitchen.
+- Sports and outdoor.
+- Toys and games.
+- Books and stationery.
+- Automotive accessories.
+- Pet supplies.
+- Office products.
+- Groceries and household essentials where permitted.
+- Digital products where lawful and supported.
+- Business and industrial products.
+- Other configurable product categories.
+
+Implement:
+- Unlimited admin-configurable category and subcategory records.
+- Product title, description, specifications and attributes.
+- Multiple product images and supported media.
+- SKU, barcode, variants, sizes, colors and options.
+- Product cost, selling price, compare-at price and sale price.
+- Supplier, seller and fulfillment-source mapping.
+- Stock quantity and inventory status.
+- Weight, dimensions and shipping class.
+- Country of origin where applicable.
+- Warranty, return eligibility and product policies.
+- Product tags, brands and collections.
+- Bulk CSV import and export.
+- Product duplication and bulk editing.
+- Draft, pending approval, published, rejected and archived states.
+- Product reviews, ratings, questions and answers.
+- Related products and recommendations.
+- Inventory alerts and low-stock notifications.
+- SEO metadata and product URL management.
+- Product moderation and prohibited-item controls.
+
+Validate prices, stock, variants and product data. Prevent duplicate imports where possible.
+
+# 7. ADVANCED SEARCH AND DISCOVERY
+
+Implement:
+- Search by name, brand, SKU and keywords.
+- Search suggestions and recent searches.
+- Category and subcategory filters.
+- Price range.
+- Brand, rating, availability and seller filters.
+- Country and delivery options when supported.
+- Sorting by relevance, price, popularity, rating and newest.
+- Pagination or efficient product loading.
+- Typo tolerance where a suitable search service exists.
+- Search empty states and clear-filter controls.
+- Recently viewed products.
+- Wishlist and product comparison.
+- Related products and configurable recommendations.
+
+For the prototype, use local sample data. Prepare a search-service interface for production.
+
+# 8. BUYER ACCOUNT AND CUSTOMER EXPERIENCE
+
+Implement:
+- Registration and sign-in screens.
+- Email verification and password reset workflows.
+- Guest checkout where permitted.
+- Buyer profile and account preferences.
+- Multiple shipping and billing addresses.
+- Saved wishlist.
+- Cart persistence.
+- Order history and order detail pages.
+- Invoices and downloadable order documents.
+- Order cancellation requests.
+- Return and refund requests.
+- Shipment tracking.
+- Product review submissions.
+- Support tickets and customer messages.
+- Email and in-app notification preferences.
+- Loyalty points and referral programs.
+- Coupon and gift-card functionality.
+- Consent and privacy settings.
+- Data export and account deletion request workflows.
+
+Demo authentication must be clearly marked as simulated. Production identity verification must be handled through a secure backend or authentication provider.
+
+# 9. SELLER MARKETPLACE
+
+Build a complete seller application and dashboard.
+
+Seller registration:
+- Personal or business seller type.
+- Business details and contact information.
+- Country, business address and supported payout currency.
+- Verification document submission workflow.
+- Terms acceptance and approval status.
+- Pending, approved, rejected and suspended states.
+
+Seller dashboard:
+- Sales overview.
+- Orders and fulfillment status.
+- Product management.
+- Inventory and bulk upload.
+- Discounts and promotions.
+- Storefront logo, banner, description and policies.
+- Customer messages.
+- Reviews and ratings.
+- Returns and dispute management.
+- Shipping settings.
+- Commission statements.
+- Eligible payouts and payment history.
+- Reports and sales analytics.
+- Notifications and account settings.
+
+The owner must configure:
+- Seller commissions.
+- Fixed and percentage-based fees.
+- Seller eligibility rules.
+- Product approval requirements.
+- Payout schedules.
+- Seller limits and account status.
+- Restricted categories and policies.
+
+All financial totals and payout eligibility must be calculated and validated server-side in production.
+
+# 10. DROPSHIPPING AND SUPPLIER INTEGRATIONS
+
+Create a dedicated dropshipping management center.
+
+Supplier management:
+- Supplier profiles and verification.
+- Supported integration method.
+- Connection status and last synchronization time.
+- Product import history.
+- Inventory and price synchronization history.
+- Fulfillment status.
+- Supplier performance reports.
+- Error logs and retry actions.
+
+Prepare integration interfaces for authorized APIs, webhooks and supported CSV/XML feeds. Design adapters for eligible supplier platforms, potentially including CJdropshipping, DSers-supported workflows and authorized AliExpress-related integrations, subject to their actual APIs, access permissions and current terms.
+
+Do not scrape protected systems or bypass access restrictions.
+
+Product import features:
+- Import by supplier or supported catalog.
+- Preview imported products before publishing.
+- Map categories, variants, SKUs, images and attributes.
+- Detect duplicates.
+- Set default markup and minimum-margin rules.
+- Add fixed or percentage-based price adjustments.
+- Convert supplier cost currencies using a configured rate source.
+- Add shipping cost, estimated fees and configurable margin.
+- Automatically update eligible stock and prices.
+- Pause, resume and schedule supported imports.
+- Hide or flag products that become unavailable.
+- Maintain an import audit trail.
+
+Order fulfillment:
+- Map each order line to its supplier.
+- Validate inventory and shipping eligibility.
+- Create supplier purchase orders through supported integrations.
+- Support manual fulfillment when no API is available.
+- Track supplier order references.
+- Synchronize shipment status and tracking.
+- Handle failures, retries and duplicate webhook events.
+- Manage partial fulfillment across multiple suppliers.
+- Flag supplier price increases and stock shortages.
+- Prevent duplicate supplier purchases.
+- Support return and refund workflows based on actual supplier policies.
+
+Show a clear connection status and never label a manual or simulated import as a live integration.
+
+# 11. INTERNATIONAL CURRENCY AND COUNTRY SETTINGS
+
+Design a centralized global settings module.
+
+Features:
+- ISO currency codes.
+- Customer-facing currency selector.
+- Configurable base and display currencies.
+- Country-based currency suggestions.
+- Exchange-rate provider interface.
+- Configurable exchange-rate markup.
+- Price rounding and decimal precision.
+- Exchange-rate update timestamps.
+- Currency-specific formatting.
+- Order-time currency and rate snapshots.
+- Separate display, transaction and settlement currencies.
+- Country, region and postcode configuration.
+- Country-specific payment methods.
+- Shipping zones and delivery estimates.
+- Tax and duties configuration.
+- Language and translation settings.
+- Regional product availability restrictions.
+
+Provide initial currency examples such as USD, MYR, EUR, GBP, SGD, AUD, CAD, PKR, INR, AED, SAR and other ISO-supported currencies.
+
+Allow the owner to add or disable currencies and define supported settlement currencies.
+
+Do not assume every currency is supported for card processing, bank settlement or payouts. Validate capabilities with the selected payment provider.
+
+# 12. PAYMENT GATEWAY MANAGEMENT
+
+Create a professional Payment Settings dashboard.
+
+Prepare provider adapters for eligible services such as Stripe, PayPal, and regional providers selected by the owner. Additional gateways can be added through the same integration architecture.
+
+Payment methods may include, where supported:
+- Visa.
+- Mastercard.
+- American Express.
+- Other card networks supported by the processor.
+- Apple Pay.
+- Google Pay.
+- Supported digital wallets.
+- Regional e-wallets.
+- Bank transfer.
+- Supported local bank-payment systems.
+- QR-based payment methods.
+- Cash on Delivery.
+- Other provider-supported methods.
+
+Owner controls:
+- Add and configure payment providers.
+- Enable or disable individual payment methods.
+- Configure test and live modes.
+- Store credentials securely on the server.
+- Select available countries and currencies.
+- Configure transaction limits and permitted order types.
+- View payment status and transaction history.
+- Review failed payments and provider errors.
+- Manage authorized refunds and partial refunds.
+- Reconcile payments and eligible seller settlements.
+- Configure COD availability by region, seller or product.
+- Review chargebacks and fraud alerts.
+
+Payment lifecycle:
+- Pending.
+- Requires customer action.
+- Authorized, where supported.
+- Paid or captured.
+- Failed.
+- Cancelled.
+- Partially refunded.
+- Refunded.
+- Disputed.
+
+Use hosted checkout or provider-tokenized payment components where appropriate. Never collect or store raw card numbers or CVV values in LocalStorage or application databases.
+
+Verify signed payment webhooks on the backend. Never mark an order paid merely because the frontend reports success.
+
+Do not claim that every bank, wallet or card is automatically connected. Each payment method requires an eligible provider, account approval, correct credentials and testing.
+
+# 13. CASH ON DELIVERY (COD)
+
+Implement a complete configurable COD workflow:
+- Enable or disable COD by country, region and postcode.
+- Allow or restrict COD by product, seller and order amount.
+- Optional configurable COD fee.
+- Order confirmation and dispatch states.
+- Courier cash collection status.
+- Delivery confirmation.
+- COD remittance and reconciliation.
+- Failed delivery and return-to-origin status.
+- COD cancellation and fraud monitoring.
+- Customer eligibility and order-risk checks.
+- Seller and courier settlement reports.
+
+Clearly distinguish a COD order from an electronically paid order.
+
+# 14. SHIPPING, FULFILLMENT AND LOGISTICS
+
+Build:
+- Shipping zones.
+- Country, state, city and postcode rules.
+- Flat-rate, weight-based and order-value-based shipping.
+- Free shipping thresholds.
+- Multiple shipping methods.
+- Estimated delivery windows.
+- Shipping labels where a provider supports them.
+- Carrier integration adapters.
+- Shipment tracking.
+- Delivery status notifications.
+- Partial shipments.
+- Multi-supplier order splitting.
+- Customs and international shipping data.
+- Duties and taxes configuration.
+- Return labels where supported.
+- Failed delivery and reshipment workflows.
+
+Prepare carrier integrations through official APIs and clearly display the actual connection status.
+
+# 15. ORDERS, RETURNS AND REFUNDS
+
+Create a centralized order management system.
+
+Order statuses:
+- Pending.
+- Payment processing.
+- Confirmed.
+- Processing.
+- Awaiting supplier.
+- Partially fulfilled.
+- Shipped.
+- Out for delivery.
+- Delivered.
+- Cancellation requested.
+- Cancelled.
+- Return requested.
+- Returned.
+- Refund pending.
+- Partially refunded.
+- Refunded.
+- Disputed.
+
+Features:
+- Unique order number.
+- Customer and address snapshots.
+- Product and pricing snapshots.
+- Tax, shipping, discount and total breakdown.
+- Payment and fulfillment records.
+- Internal notes and audit history.
+- Order search and filters.
+- Packing and shipping workflow.
+- Refund approval permissions.
+- Return reasons and evidence attachments where supported.
+- Supplier order references.
+- Notifications and tracking events.
+- Invoice generation.
+- Financial reconciliation.
+
+Prevent duplicate orders and duplicate fulfillment operations through idempotency controls.
+
+# 16. OWNER SUPER ADMIN DASHBOARD
+
+Create a powerful owner-only administration interface.
+
+Dashboard metrics:
+- Total sales.
+- Orders today.
+- Pending orders.
+- Product count.
+- Active buyers.
+- Active sellers.
+- Pending seller applications.
+- Supplier connection status.
+- Gross merchandise value.
+- Discounts and refunds.
+- Commission revenue.
+- Estimated gross profit.
+- Payment failures.
+- COD pending remittance.
+- Inventory alerts.
+- Recent activities.
+
+Use clear definitions for revenue, gross merchandise value, profit and commission. Do not confuse revenue with profit.
+
+Admin modules:
+1. Overview.
+2. Buyer management.
+3. Seller management.
+4. Supplier management.
+5. Product catalog.
+6. Category and brand management.
+7. Orders and fulfillment.
+8. Payments and refunds.
+9. Seller commissions and payouts.
+10. Dropshipping integrations.
+11. Currency and exchange rates.
+12. Countries and regional rules.
+13. Shipping and carriers.
+14. Taxes and duties.
+15. Coupons and promotions.
+16. Reviews and moderation.
+17. Customer support and disputes.
+18. Marketing and SEO.
+19. Social media settings.
+20. Website content and appearance.
+21. Email and notification templates.
+22. Staff roles and permissions.
+23. Security and audit logs.
+24. API integration settings.
+25. Backup and maintenance controls.
+26. Company information and policies.
+
+Owner emergency controls:
+- Enable maintenance mode.
+- Pause new orders.
+- Disable a compromised integration.
+- Temporarily suspend new seller applications.
+- Unpublish flagged products.
+- Review suspicious activity.
+- Disable a payment method.
+- Inspect system errors and integration health.
+
+Require confirmation for destructive actions and appropriate authorization for refunds, payouts, account suspension and other high-impact operations.
+
+# 17. SOCIAL MEDIA MANAGEMENT — ALL MAJOR PLATFORMS
+
+Build a dedicated Social Media & Public Contact Settings module.
+
+Prepare configurable entries for:
+- Facebook.
+- Instagram.
+- TikTok.
+- YouTube.
+- WhatsApp.
+- Telegram.
+- Messenger.
+- X.
+- LinkedIn.
+- Pinterest.
+- Snapchat.
+- Threads.
+- Reddit.
+- Discord.
+- WeChat.
+- Line.
+- Viber.
+- Skype, where appropriate.
+- Other custom social networks.
+
+For each entry, support:
+- Platform name.
+- Profile URL or contact link.
+- Optional username.
+- Optional display label.
+- Optional icon.
+- Enable/disable switch.
+- Display order.
+- Visibility settings.
+- Preview and URL validation.
+
+Visibility controls:
+- Public storefront.
+- Footer.
+- Contact page.
+- Buyer account area.
+- Seller dashboard, if separately enabled.
+- Private admin only.
+
+The owner must be able to show selected social links to buyers and public visitors without showing every configured link.
+
+Important requirements:
+- Do not invent social profile URLs or usernames.
+- Do not show an unconfigured platform link.
+- Do not expose private internal links.
+- Do not claim a social account is connected when only a URL is saved.
+- Separate public links from authenticated publishing integrations.
+- Add real posting, analytics or messaging automation only when supported APIs and authorized credentials are configured.
+
+# 18. COMPANY INFORMATION AND CONTACT MANAGEMENT
+
+Create an editable Company Information section.
+
+Initial values:
+- Brand: DH&Co
+- Full name: Daily Heaven & Company
+- Tagline: THE WORLD BRINGING TO YOUR PHONE
+- Domain: dailyheaven.com
+- Email: dailyheavenco@gmail.com
+- Contact: +60196006241
+- WhatsApp: +60196006241
+
+Requirements:
+- Show contact details in selected public website locations.
+- Support mailto and click-to-call links.
+- Generate a WhatsApp contact link using the configured number and country-code format.
+- Provide a contact form with server-side validation in production.
+- Include customer support hours and address fields as optional settings.
+- Let the owner edit all company information.
+- Let the owner choose which information is public.
+- Never invent a physical business address, registration number or legal identity.
+- Support configurable About Us, Contact, Privacy Policy, Terms, Shipping Policy, Return Policy and Refund Policy pages.
+
+Do not hardcode editable company details across multiple components. Use a shared typed configuration service.
+
+# 19. DIGITAL MARKETING AND CUSTOMER GROWTH
+
+Implement:
+- SEO-friendly URLs.
+- Page titles and metadata.
+- Canonical URLs.
+- XML sitemap generation.
+- Robots directives.
+- Product structured data where appropriate.
+- Social sharing metadata.
+- Landing-page management.
+- Promotional banners.
+- Coupons and discount codes.
+- Flash sales.
+- Bundles and volume discounts.
+- Referral program.
+- Affiliate program architecture.
+- Newsletter signup.
+- Abandoned-cart reminder architecture.
+- Email campaign integration interfaces.
+- Customer segmentation.
+- Analytics integration settings.
+- Consent-aware marketing preferences.
+- Conversion funnel reporting.
+- Campaign performance metrics.
+- Product feeds for eligible advertising platforms.
+
+Do not fabricate analytics results. Use clearly labeled sample metrics in demo mode.
+
+# 20. NOTIFICATIONS AND CUSTOMER SUPPORT
+
+Implement a centralized notification system.
+
+Channels:
+- In-app notifications.
+- Email integration interface.
+- SMS integration interface.
+- WhatsApp messaging integration only through authorized supported services.
+- Push notifications where supported.
+
+Notification events:
+- Account verification.
+- Order confirmation.
+- Payment status.
+- Order shipment.
+- Delivery.
+- Cancellation.
+- Refund status.
+- Seller approval.
+- Low stock.
+- Supplier sync failures.
+- Payout status.
+- Support replies.
+
+Support center:
+- Frequently asked questions.
+- Contact form.
+- Support tickets.
+- Ticket categories and priorities.
+- Ticket status and assignment.
+- Buyer-seller communication.
+- Admin escalation.
+- Internal notes.
+- Resolution history.
+
+Use opt-in controls, appropriate consent and message-delivery status tracking.
+
+# 21. REVIEWS, RATINGS AND TRUST
+
+Implement:
+- Verified-purchase reviews where supported by order history.
+- Star ratings.
+- Written reviews.
+- Product questions and answers.
+- Seller ratings.
+- Review moderation.
+- Report-review function.
+- Seller responses.
+- Spam and abuse checks.
+- Rating summaries.
+- Clear disclosure of unverified reviews.
+
+Do not fabricate verified purchases, customer testimonials or trust certifications.
+
+# 22. TAX, LEGAL AND COMPLIANCE SETTINGS
+
+Build configurable country-level settings for:
+- Sales tax and VAT.
+- GST where applicable.
+- Tax-inclusive or tax-exclusive display.
+- Shipping tax rules.
+- Duties and customs.
+- Tax identifiers and invoice fields.
+- Seller tax information.
+- Privacy policy.
+- Terms of service.
+- Cookie consent.
+- Customer data export and deletion requests.
+- Refund and cancellation policies.
+- Product restrictions.
+- Record retention.
+- Marketing consent.
+- Age or identity checks where legally required.
+
+Prepare integration interfaces for suitable tax services.
+
+Do not assume a single tax rule applies worldwide. Keep country-specific configuration and make legal requirements subject to review by qualified local professionals.
+
+# 23. SECURITY AND PERMISSIONS
+
+Implement:
+- Server-side authentication and authorization.
+- Role-based access control.
+- Least-privilege permissions.
+- Secure session handling.
+- Multi-factor authentication for privileged accounts where supported.
+- Server-side input validation.
+- Rate limiting.
+- Protection against common web vulnerabilities.
+- Secure secret management.
+- Signed webhook verification.
+- Audit logging.
+- Secure error handling.
+- Backup and recovery strategy.
+- Account suspension and recovery workflows.
+- Privacy-aware logging.
+- Security headers and HTTPS deployment.
+- Dependency review and security testing.
+
+A hidden admin button or frontend-only role check is not security. All privileged actions must be enforced on the server in production.
+
+# 24. ANALYTICS AND REPORTING
+
+Create report pages for:
+- Sales by day, week, month and year.
+- Orders by status.
+- Sales by country and currency.
+- Product performance.
+- Category performance.
+- Seller performance.
+- Supplier fulfillment performance.
+- Conversion rates.
+- Average order value.
+- Refund and cancellation rates.
+- Commission income.
+- Shipping cost.
+- Payment fees.
+- COD collection and reconciliation.
+- Inventory turnover.
+- Estimated profit and cost breakdown.
+
+Support date filters, search, sorting, CSV export and print-friendly views.
+
+Calculate actual profit using recorded costs, discounts, shipping, fees, refunds and other applicable expenses. Mark unavailable data clearly instead of guessing.
+
+# 25. ACCESSIBILITY AND MOBILE EXPERIENCE
+
+Make the complete application responsive.
+
+Test layouts for:
+- Mobile phones.
+- Tablets.
+- Laptops.
+- Desktop screens.
+
+Include:
+- Accessible labels.
+- Keyboard navigation.
+- Visible focus states.
+- Semantic headings.
+- Screen-reader-friendly forms.
+- Appropriate contrast.
+- Touch-friendly controls.
+- Responsive tables and mobile card views.
+- Useful error messages.
+- Loading indicators.
+- Empty states and confirmation dialogs.
+
+# 26. LOCALSTORAGE DEMO MODE
+
+Build a functional demo using LocalStorage for appropriate non-sensitive data.
+
+Persist:
+- Demo product catalog.
+- Demo categories.
+- Cart and wishlist.
+- UI preferences.
+- Demo company settings.
+- Configurable social media links.
+- Sample orders and dashboard state.
+- Demo product import records.
+
+Use seed data and clear demo badges.
+
+Create:
+- Reset demo data.
+- Restore sample data.
+- Export appropriate demo records.
+- Import validated sample CSV data.
+- Error handling for unavailable storage.
+- Typed data schemas and migrations.
+
+Never use LocalStorage as the production source of truth for payments, authentication, seller permissions, global inventory or financial records.
+
+# 27. DATABASE AND BACKEND PREPARATION
+
+Define typed models and a database schema for:
+- Users.
+- Roles and permissions.
+- Buyer profiles.
+- Seller profiles.
+- Supplier profiles.
+- Products.
+- Product variants.
+- Categories.
+- Brands.
+- Inventory.
+- Supplier mappings.
+- Product import jobs.
+- Carts.
+- Orders.
+- Order items.
+- Payments.
+- Refunds.
+- Shipments.
+- Returns.
+- Coupons.
+- Reviews.
+- Notifications.
+- Support tickets.
+- Commissions.
+- Payouts.
+- Currencies.
+- Exchange-rate snapshots.
+- Countries and shipping zones.
+- Tax rules.
+- Social media links.
+- Company settings.
+- Audit logs.
+- Integration configurations.
+
+Use stable IDs, timestamps, validation, relationships and suitable database constraints.
+
+Create repository and service interfaces so LocalStorage demo implementations can later be replaced by production API implementations without rewriting the entire UI.
+
+Use database transactions for critical order and financial operations where appropriate.
+
+# 28. CODE QUALITY AND TESTING
+
+Requirements:
+- Organize code into reusable components and feature modules.
+- Avoid a single enormous component or unmaintainable file.
+- Use strict TypeScript types.
+- Avoid unnecessary use of any.
+- Keep domain logic separate from presentation.
+- Use consistent naming and error handling.
+- Validate forms and API responses.
+- Add unit tests for critical calculations and utilities.
+- Add workflow tests for cart, checkout, seller permissions and order status transitions where testing tools are available.
+- Test currency formatting, discounts, margins and totals.
+- Test responsive layouts.
+- Resolve compilation errors and missing imports.
+- Avoid fake buttons and dead navigation.
+- Do not leave essential sections as TODO placeholders.
+
+If the environment supports multiple files, create a proper project structure with reusable components, types, services and pages.
+
+# 29. REQUIRED FUNCTIONAL WORKFLOWS
+
+Make these workflows functional in demo mode:
+
+Workflow A: Buyer shopping
+Browse → Search → Filter → Product details → Cart → Checkout simulation → Order confirmation → Order history.
+
+Workflow B: Seller onboarding
+Seller application → Pending review → Admin approval → Seller dashboard → Product submission → Product approval → Order management.
+
+Workflow C: Dropshipping
+Supplier connection demo → Product import preview → Price and margin calculation → Product approval → Sample customer order → Simulated fulfillment → Tracking update.
+
+Workflow D: Admin control
+Admin dashboard → Approve seller → Approve product → Manage order → Configure commission → Edit company information → Configure social links → Review reports.
+
+Workflow E: Payments
+Select demo payment method → Simulate payment result → Update demo order state → Show transaction history. Clearly label this as a simulation. Never present it as a real transaction.
+
+Workflow F: International settings
+Choose country → Choose display currency → Show correctly formatted product prices → Apply configured shipping and regional rules.
+
+Workflow G: Social media management
+Admin adds a platform URL → Selects visibility → Enables it → Saves settings → Selected links appear in the public footer or buyer-facing contact area.
+
+# 30. FINAL UI AND PAGE REQUIREMENTS
+
+Create all the following page groups with connected navigation:
+
+Public:
+- Home.
+- Shop all.
+- Category and subcategory.
+- Search results.
+- Product details.
+- Seller storefront.
+- Brand pages.
+- Offers.
+- About Us.
+- Contact Us.
+- Help Center.
+- FAQ.
+- Privacy Policy.
+- Terms.
+- Shipping Policy.
+- Return and Refund Policy.
+
+Buyer:
+- Register and login.
+- Profile.
+- Address book.
+- Wishlist.
+- Cart.
+- Checkout.
+- Order history.
+- Order details.
+- Tracking.
+- Returns and refunds.
+- Reviews.
+- Notifications.
+- Support tickets.
+- Preferences.
+
+Seller:
+- Seller application.
+- Seller overview.
+- Store settings.
+- Product management.
+- Inventory.
+- Orders.
+- Fulfillment.
+- Returns.
+- Promotions.
+- Reviews.
+- Customer messages.
+- Commissions.
+- Payouts.
+- Analytics.
+- Account settings.
+
+Supplier:
+- Supplier overview.
+- Connection management.
+- Catalog imports.
+- Product mappings.
+- Inventory sync.
+- Fulfillment requests.
+- Shipments.
+- Tracking.
+- Import logs.
+- Performance reports.
+
+Owner/admin:
+- Overview.
+- Users.
+- Sellers.
+- Suppliers.
+- Products.
+- Categories.
+- Orders.
+- Payments.
+- Refunds.
+- Commissions.
+- Payouts.
+- Dropshipping.
+- Currencies.
+- Countries.
+- Shipping.
+- Taxes.
+- Promotions.
+- Marketing.
+- Social media.
+- Company information.
+- Website appearance.
+- Notifications.
+- Support.
+- Reports.
+- Staff and permissions.
+- Security.
+- Audit logs.
+- Integrations.
+- Backup and maintenance.
+
+# 31. BUILD EXECUTION INSTRUCTIONS
+
+Work in the following order:
+
+STEP 1:
+Inspect the available project files and runtime requirements.
+
+STEP 2:
+Set up or repair the React + TypeScript project structure using supported dependencies.
+
+STEP 3:
+Implement the brand design system and reusable layout components.
+
+STEP 4:
+Build the storefront, product catalog, cart and buyer experience.
+
+STEP 5:
+Build seller, supplier and owner/admin dashboards.
+
+STEP 6:
+Implement typed data models, LocalStorage repositories and realistic demo data.
+
+STEP 7:
+Connect the required demo workflows and navigation.
+
+STEP 8:
+Build settings for currencies, payments, COD, shipping, dropshipping, company details and social media visibility.
+
+STEP 9:
+Run available checks, fix errors and verify the primary workflows.
+
+STEP 10:
+Prepare the production backend and integration checklist without pretending external services are connected.
+
+If the entire project cannot be completed in one generation, prioritize a working, integrated foundation and continue implementing the remaining modules in subsequent steps. Preserve existing working code instead of unnecessarily replacing it.
+
+Do not stop after describing a plan. Implement the application in the available coding environment.
+
+# 32. ACCEPTANCE CRITERIA
+
+The project is ready for prototype review when:
+
+1. The DH&Co brand and exact tagline are displayed correctly.
+2. The required black, dark red, grey and golden theme is consistent.
+3. The public storefront is responsive.
+4. Products, categories, search, filters, cart and wishlist work in demo mode.
+5. Buyer, seller, supplier and admin views are available.
+6. Role-specific demo navigation works.
+7. The owner can manage demo products, orders and seller approvals.
+8. The owner can edit company contact details.
+9. Social media links can be configured and selectively displayed to buyers.
+10. Currency selection and formatting work for configured currencies.
+11. Demo checkout clearly identifies simulated payments.
+12. Dropshipping imports and fulfillment are explicitly labeled as simulated unless actually connected.
+13. COD settings and order statuses can be demonstrated.
+14. Data persists appropriately in LocalStorage.
+15. Invalid forms and unavailable features have clear error states.
+16. No frontend-only security claim is represented as production security.
+17. No fake live integrations or fake payment confirmations are displayed.
+18. The code compiles and the main workflows pass available tests.
+
+# 33. FINAL DELIVERY
+
+After implementing the project, provide:
+- A summary of the completed features.
+- The project file structure.
+- How to run and preview the application.
+- Which workflows are functional in demo mode.
+- Which external services still require configuration.
+- The backend and database requirements for production.
+- The payment, supplier and shipping integration checklist.
+- Known limitations and any remaining incomplete features.
+
+Start building DH&Co now. Focus on a polished, working, connected application rather than a static design. Use the exact brand information provided above and make the owner the ultimate authorized administrator of the platform.
